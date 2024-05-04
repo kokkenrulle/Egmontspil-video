@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+#gameContainer {
+    display: none; /* Skjul denne container indtil spillet starter */
+    justify-content: center;
+    align-items: center;
+    width: 800px; /* Juster størrelsen efter behov */
+    height: 600px; /* Juster størrelsen efter behov */
+    background-color: #fff; /* Baggrundsfarve, vises når aktiv */
+    border: 1px solid #ccc; /* Ramme for at markere containeren */
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Skygge for at give dybde */
+    position: absolute; /* Absolut positionering for at placere i midten */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcomeScreen {
+    text-align: center;
+    width: 100%; /* Sikrer at elementet fylder hele bredden */
+    display: flex;
+    flex-direction: column; /* Stak børnene vertikalt */
+    align-items: center; /* Centrer børnene horisontalt */
+}
+
+#introVideo {
+    width: 640px; /* Fast bredde */
+    height: 360px; /* Fast højde */
+    margin-bottom: 20px; /* Afstand til næste element */
+}
+
+#startButton {
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#startButton:hover {
+    background-color: #367c39;
+    transform: scale(1.1);
+}
