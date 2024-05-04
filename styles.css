@@ -36,10 +36,10 @@ body, html {
     height: 360px; /* Fast højde */
     margin-bottom: 20px; /* Afstand til næste element */
 }
-
 #startButton {
-    padding: 20px 40px;
-    font-size: 24px;
+    padding: 25px 50px;  /* Gør knappen større ved at øge padding */
+    font-size: 26px;     /* Gør teksten på knappen større */
+    margin-top: 30px;    /* Tilføjer mere plads ovenover knappen */
     font-weight: bold;
     background-color: #4CAF50;
     color: white;
@@ -50,6 +50,7 @@ body, html {
 }
 
 #startButton:hover {
-    background-color: #367c39;
-    transform: scale(1.1);
+    background-color: #367c39; /* Mørkere grøn farve ved hover */
+    transform: scale(1.15);    /* Forstørrer knappen lidt når musen er over */
 }
+
